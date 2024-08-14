@@ -21,7 +21,10 @@ const API = process.env.REACT_APP_BASE_URL
 
   return (
     <section className="index" id="anime-list">
-       {animes.map((anime) => {})}
+       {animes.map((anime) => { return <Anime
+        
+      key={anime.id} name={anime.name} description={anime.description} />
+         })}
               
       
     </section>
